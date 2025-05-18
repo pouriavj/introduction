@@ -1,0 +1,65 @@
+#header{
+    background-color: #077A7D;
+    
+}
+h1{
+     font-family: "Playwrite DK Loopet", cursive;
+     font-optical-sizing: auto;
+     font-weight: bold;
+     color: #06202B;
+   
+     font-size: 72px;
+}
+.subtitle{
+    font-family: "Cascadia Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #06202B;
+}
+body{
+    background-color: #F5EEDD;
+}
+.me{
+    border-radius: 50%;
+}
+h2{
+    color: #077A7D;
+    font-family: "Cascadia Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    
+    
+}
+.intro{
+    color: #06202B;
+    width: 40%;
+    margin: auto;
+    font-family: "Cascadia Mono", sans-serif;
+    font-size: 18px;
+    
+}
+hr{
+    width: 6%;
+    border-top: dotted #06202B;
+    margin: 50px auto;
+    
+}
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+}
+.works{
+    font-size: 20px;
+    font-weight: bold;
+    color: #077A7D ;
+}
+#footer{
+    background-color: #7AE2CF;
+    font-weight: 600;
+}
+
