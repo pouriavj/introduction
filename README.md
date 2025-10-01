@@ -16,8 +16,8 @@ The website features unique layouts and visuals, including buttons that navigate
 
 ## 📸 Screenshot
 
-![Introduction Page](./assets/images/screenshot.png)  
-*Main page with introduction and navigation buttons.*
+![Introduction Page](./introductionScreenshot.jpg)  
+
 
 ---
 
