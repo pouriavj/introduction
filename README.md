@@ -13,8 +13,12 @@ It features a creative and responsive design to showcase a simple personal profi
 
 ---
 
-## 🚀 How to Run
+## 🚀 Demo
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
+You can view the live demo of the website here: [Introduction Demo](https://pouriavj.github.io/Introduction/)
+
+---
+
+## 📫 Contact
+
+Links to GitHub, LinkedIn, and a contact page are included in the footer of the website.
