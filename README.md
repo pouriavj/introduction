@@ -15,7 +15,7 @@ It features a creative and responsive design to showcase a simple personal profi
 
 ## 🚀 Demo
 
-You can view the live demo of the website here: [Introduction Demo](https://pouriavj.github.io/Introduction/)
+You can view the live demo of the website here: [Introduction Demo](https://pouriavj.github.io/introduction/)
 
 ---
 
