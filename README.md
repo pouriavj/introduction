@@ -14,6 +14,13 @@ The website features unique layouts and visuals, including buttons that navigate
 
 ---
 
+## 📸 Screenshot
+
+![Introduction Page](./assets/images/screenshot.png)  
+*Main page with introduction and navigation buttons.*
+
+---
+
 ## 🚀 Demo
 
 You can view the live demo of the website here: [Introduction Demo](https://pouriavj.github.io/Introduction/)
