@@ -62,3 +62,31 @@ hr{
     background-color: #7AE2CF;
     font-weight: 600;
 }
+.header-decor {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-decor::before,
+.header-decor::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+.header-decor::before {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #7AE2CF, #077A7D);
+    top: -50px;
+    left: -50px;
+}
+
+.header-decor::after {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #06202B, #077A7D);
+    bottom: -40px;
+    right: -40px;
+}
