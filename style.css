@@ -90,3 +90,10 @@ hr{
     bottom: -40px;
     right: -40px;
 }
+#webHr{
+    width: 100%;
+    border-top: 3px double #077A7D;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
