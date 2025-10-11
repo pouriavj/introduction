@@ -11,9 +11,9 @@ You can view the live demo of the website here: [Introduction Demo](https://pour
 
 ---
 
-## 📸 Screenshot
+## 📸 Demo
 
-![Introduction Page](./introductionScreenshot.jpg)  
+![Introduction Page](./introduction.gif)  
 
 
 ---
