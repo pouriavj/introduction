@@ -11,7 +11,7 @@ You can view the live demo of the website here: [Introduction Demo](https://pour
 
 ---
 
-## 📸 Demo
+## 🖼️ Preview
 
 ![Introduction Page](./introduction.gif)  
 
