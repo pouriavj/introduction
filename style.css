@@ -52,7 +52,7 @@ h2{
     margin: auto;
     font-family: "Cascadia Mono", sans-serif;
     font-size: 18px;
-    
+   
 }
 hr{
     width: 6%;
@@ -161,4 +161,107 @@ img{
 .cloud-2 {
   animation: floatCloud2 12s ease-in-out infinite;
   transition: opacity 1s ease;
+}
+/* Skill icon hover animation */
+.icon-square img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover effect */
+.icon-square:hover img {
+  transform: scale(1.2) ;
+  filter: drop-shadow(0 0 8px rgba(0, 183, 255, 0.6));
+}
+
+
+/* Outline Custom Button */
+.btn-outline-custom {
+    color: #25b8b8;
+    border-color: #25b8b8;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    color: #fff;
+    background-color: #7AE2CF;
+    border-color: #7AE2CF;
+}
+
+/* Custom Button */
+.btn-custom {
+    font-size: 1rem;       
+    font-weight: 400;      
+    letter-spacing: 0.5px; 
+    transition: all 0.4s ease; /* smooth hover */
+}
+
+.btn-custom:hover {
+    transform: translateY(-3px) scale(1.05); /* lift & grow */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* soft shadow */
+}
+
+/* Icon inside the button */
+.btn-custom img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin-left: 8px; 
+}
+
+
+.btn-custom:hover img {
+    transform: scale(1.05); 
+    filter: brightness(1.2); 
+}
+.carousel-wrapper {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 15px; 
+  overflow: hidden;     
+  background: #7AE2CF;     
+  transition: box-shadow 0.3s ease;
+}
+
+.carousel-wrapper:hover {
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-top: 3px solid #7AE2CF;
+    border-right: 3px solid #7AE2CF;
+}
+
+
+.carousel-control-prev-icon::after {
+    transform: rotate(-135deg);
+}
+
+.carousel-control-next-icon::after {
+    transform: rotate(45deg);
+}
+
+
+.carousel-control-prev:hover::after,
+.carousel-control-next:hover::after {
+    transform: scale(1.2) rotate(-135deg); 
+    border-color: #25b8b8;
+}
+
+.carousel-control-next:hover::after {
+    transform: scale(1.2) rotate(45deg);
+    border-color: #25b8b8;
 }
