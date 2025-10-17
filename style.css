@@ -29,9 +29,13 @@ h1{
     font-size: 40px;
     color: #06202B;
 }
-body{
-    background-color: #F5EEDD;
+body {
+  background: 
+    linear-gradient(rgba(245, 238, 221, 0.3), rgba(245, 238, 221, 0.3)), /* your color overlay */
+    url('./assets/images/background.png') center/cover no-repeat;
+    background-attachment: fixed; /* keeps the image in place while scrolling */
 }
+
 .me{
     border-radius: 50%;
 }
@@ -55,10 +59,13 @@ h2{
    
 }
 hr{
-    width: 6%;
-    border-top: dotted #06202B;
-    margin: 50px auto;
-    
+    width: 10%;                   /* slightly narrower than full width */
+    height: 6px;                  /* makes it more visible */
+    border: none;                 /* remove default border */
+    border-radius: 10px;          /* rounded edges */
+    margin: 20px auto 40px auto;  /* top/bottom spacing */
+    background: linear-gradient(90deg, #7AE2CF, #077A7D); /* gradient */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* subtle shadow */
 }
 .git{
     font-weight: bold;
@@ -91,19 +98,18 @@ img{
     font-family: "Cascadia Mono", sans-serif;
     font-size: xx-large;
 }
-#footer{
-    background-color: #7AE2CF;
-    font-weight: 600;
-}
+
 #footerContact{
     
-    background-color:#7AE2CF ;
+    
+    background: linear-gradient(to bottom, rgba(245, 238, 221, 0.4), #7AE2CF);
     font-weight: 600;
     position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     margin-top: 280px;
+    text-align: center;
 }
 .header-decor {
     position: relative;
@@ -133,13 +139,16 @@ img{
     bottom: -40px;
     right: -40px;
 }
-#webHr{
-    width: 100%;
-    border-top: 3px double #077A7D;
-    margin: 0px auto;
-    margin-bottom: 15px;
-    border-radius: 50%;
+#webHr {
+    width: 100%;                   /* slightly narrower than full width */
+    height: 6px;                  /* makes it more visible */
+    border: none;                 /* remove default border */
+    border-radius: 10px;          /* rounded edges */
+    margin: 20px auto 40px auto;  /* top/bottom spacing */
+    background: linear-gradient(90deg, #7AE2CF, #077A7D); /* gradient */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* subtle shadow */
 }
+
 /* Cloud animations */
 @keyframes floatCloud1 {
   0% { transform: translateX(-50px) translateY(0px); opacity: 0.8; }
@@ -264,4 +273,92 @@ img{
 .carousel-control-next:hover::after {
     transform: scale(1.2) rotate(45deg);
     border-color: #25b8b8;
+}
+/* Make all carousel images uniform */
+.carousel-item img {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* or 4/3, depending on your preferred ratio */
+    object-fit: cover;    /* fills the area and crops if necessary */
+}
+
+/* Make all cards equal height */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* lets all cards stretch */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Make images same height and cover card area */
+.card img {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* keeps images proportional */
+    object-fit: cover;     /* fills area without distortion */
+    flex-shrink: 0;        /* prevents images from shrinking */
+    transition: transform 0.3s ease;
+}
+
+
+/* Card body takes remaining space */
+.card-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Adjust the problematic image */
+.card img[src*="currencyCompareGif.gif"] {
+    object-position: top; /* moves the focus area to top */
+}
+.card img[src*="familyTravelTracker.gif"] {
+    object-position: left center; /* shifts the image so the left side is visible */
+}
+/* Themed card hover effect */
+
+.card:hover {
+    box-shadow: 0 15px 30px rgba(122, 226, 207, 0.5), /* turquoise glow */
+                0 10px 20px rgba(7, 122, 125, 0.3);   /* deeper green shadow */
+    transform: translateY(-5px); /* subtle lift */
+}
+/* Gradient outline button */
+.btn-outline-primary {
+    color: #077A7D; /* text color */
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #7AE2CF, #077A7D) 1;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background: linear-gradient(45deg, #7AE2CF, #077A7D);
+    border-color: #077A7D;
+}
+/* Hero Section adjustments */
+
+
+.git {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(45deg, #7AE2CF, #077A7D);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.git:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+}
+#footer {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(245, 238, 221, 0.4), #7AE2CF);
+  font-weight: 600;
+ 
+  text-align: center;
 }
