@@ -193,16 +193,19 @@ img{
 
 /* Outline Custom Button */
 .btn-outline-custom {
-    color: #25b8b8;
-    border-color: #25b8b8;
+    color: #fff; /* initially like current hover */
+    background-color: #7AE2CF; /* initially like current hover */
+    border-color: #7AE2CF;
     transition: all 0.3s ease;
 }
 
 .btn-outline-custom:hover {
-    color: #fff;
-    background-color: #7AE2CF;
-    border-color: #7AE2CF;
+    color: #25b8b8; /* revert to original normal state on hover */
+    background-color: transparent;
+    border-color: #25b8b8;
+    box-shadow: none;
 }
+
 
 /* Custom Button */
 .btn-custom {
