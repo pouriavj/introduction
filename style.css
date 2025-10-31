@@ -67,10 +67,6 @@ hr{
     background: linear-gradient(90deg, #7AE2CF, #077A7D); /* gradient */
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* subtle shadow */
 }
-.git{
-    font-weight: bold;
-    font-size: larger;
-}
 img{
     object-fit: cover;
 }
@@ -396,6 +392,20 @@ img{
   .webLogo {
     height: 75px;
   }
+  .git {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    gap: 8px;
+  }
+
+  .git img {
+    height: 24px;
+  }
+  #webHr {
+    margin: 10px auto 15px auto;
+    height: 5px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -413,5 +423,19 @@ img{
   }
    .carousel-caption p {
     font-size: 0.55rem;
+  }
+  .git {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    gap: 6px;
+  }
+
+  .git img {
+    height: 20px;
+  }
+  #webHr {
+    margin: 5px auto 10px auto;
+    height: 4px;
   }
 }
