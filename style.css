@@ -40,8 +40,6 @@ body {
     url('./assets/images/background.webp') no-repeat center fixed;
     background-size: cover;
     scroll-behavior: smooth;
-    position: absolute;
-    bottom: 0;
 }
 
 .me{
