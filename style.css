@@ -35,13 +35,23 @@ body {
     width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background: 
-    linear-gradient(rgba(245, 238, 221, 0.3), rgba(245, 238, 221, 0.3)), 
-    url('./assets/images/background.webp') no-repeat center fixed;
-    background-size: cover;
+
     scroll-behavior: smooth;
 }
-
+body:after{
+      content:"";
+      position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:100vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
+      z-index:-1; /* needed to keep in the background */
+      background: url("./assets/images/background.webp") center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
 .me{
     border-radius: 50%;
 }
@@ -381,9 +391,6 @@ img{
     position: relative;
 }
 @media (max-width: 768px) {
-  body{
-    background-position: unset;
-  }  
   h1 {
     font-size: 45px;
   }
