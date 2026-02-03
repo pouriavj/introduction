@@ -1,5 +1,7 @@
 #header{
     background-color: #077A7D;
+    width: 100%;
+    overflow: hidden;
     
 }
 #head{
@@ -30,6 +32,9 @@ h1{
     color: #06202B;
 }
 body {
+    width: 100%;
+  height: 100%;
+  overflow-x: hidden;
   background: 
     linear-gradient(rgba(245, 238, 221, 0.3), rgba(245, 238, 221, 0.3)), 
     url('./assets/images/background.webp') center/cover no-repeat;
@@ -367,7 +372,8 @@ img{
   position: relative;
   background: linear-gradient(to bottom, rgba(245, 238, 221, 0.4), #7AE2CF);
   font-weight: 600;
- 
+  width: 100%;
+  overflow: hidden;
   text-align: center;
 }
 
