@@ -382,7 +382,7 @@ img{
 }
 @media (max-width: 768px) {
   body{
-    background-attachment: scroll;
+    background-position: unset;
   }  
   h1 {
     font-size: 45px;
