@@ -32,7 +32,7 @@ h1{
 body {
   background: 
     linear-gradient(rgba(245, 238, 221, 0.3), rgba(245, 238, 221, 0.3)), 
-    url('./assets/images/background.png') center/cover no-repeat;
+    url('./assets/images/background.webp') center/cover no-repeat;
     background-attachment: fixed; /* keeps the image in place while scrolling */
 }
 
