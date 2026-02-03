@@ -381,6 +381,9 @@ img{
     position: relative;
 }
 @media (max-width: 768px) {
+  body{
+    background-attachment: scroll;
+  }  
   h1 {
     font-size: 45px;
   }
